@@ -6,4 +6,8 @@ echo "Calling existing assemble script"
 
 echo `ls -al /deployments >/tmp/test.sout`
 
+rm /deploymets/websocket-chat.war
+cp -R /tmp/src/target/websocket-chat /deployments
+
+
 echo "Removing .war file and copying exploded contents"
