@@ -4,4 +4,6 @@ echo "Calling existing assemble script"
 
 /usr/local/s2i/assemble
 
+echo `ls -al /deployments >/tmp/test.sout`
+
 echo "Removing .war file and copying exploded contents"
