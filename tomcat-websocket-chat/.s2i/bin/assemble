@@ -6,7 +6,7 @@ echo "Calling existing assemble script"
 
 echo `ls -al /deployments >/tmp/test.sout`
 
-rm /deploymets/websocket-chat.war
+rm -f /deployments/websocket-chat.war
 cp -R /tmp/src/target/websocket-chat /deployments
 
 
