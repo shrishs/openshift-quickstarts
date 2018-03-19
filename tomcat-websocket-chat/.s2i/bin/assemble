@@ -1,7 +1,5 @@
 #!/bin/sh
 /usr/local/s2i/assemble
 
-echo `ls -al /deployments >/tmp/test.sout`
-
 rm -f /deployments/websocket-chat.war
 cp -R /tmp/src/target/websocket-chat /deployments
