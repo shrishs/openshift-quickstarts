@@ -59,6 +59,20 @@
 
     </dependencies>
 
+  <distributionManagement>
+    <repository>
+         <id>maven-releases</id>
+         <name>MyCo Internal Repository</name>
+         <url>http://nexus-maf-test.dev.spec.honeywell.com/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+         <id>maven-snapshots</id>
+         <name>Your Snapshot Repository</name>
+         <url>http://nexus-maf-test.dev.spec.honeywell.com/repository/maven-snapshots/</url>
+    </snapshotRepository>
+</distributionManagement>
+  
+  
     <profiles>
         <profile>
             <id>fat-jar</id>
